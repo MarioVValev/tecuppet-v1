@@ -6,7 +6,6 @@
     npm install --global yarn
 
 ### Simple installation
-#### Use this repository as a template (copy the structure to a new repo)
     yarn install
     mkdir -p jsonFiles - create folder for test data storage
     mkdir -p reports - create folder for test post-run reports

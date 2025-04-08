@@ -1,11 +1,10 @@
 {
-  "jsonFilePath": "jsonFiles/example.json",
+  "jsonFilePath": "jsonFiles/temp.json",
   "args": [
     "--no-sandbox",
     "--disable-setuid-sandbox",
     "--proxy-server='direct://'",
-    "--proxy-bypass-list=*",
-    "--headless=new"
+    "--proxy-bypass-list=*"
   ],
   "viewport": {
     "width": 1920,
@@ -19,8 +18,8 @@
     "Cards": ".category-cards"
   },
   "basicAuth": {
-    "authUser": "user",
-    "authPass": "pass"
+    "authUser": "total",
+    "authPass": "total"
   },
   "blockingCookie":".selector-of-cookie-consent-yes-button",
   "pa11yConfig": {

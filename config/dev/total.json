@@ -1,0 +1,13 @@
+{
+  "credentials": {
+    "baseUrl": "https://total-dev-twf4biz.aqa.tgscloud.net/",
+    "username": "ffw_admin",
+    "password": "utz.wqb5YBA2mbk5bzy"
+  },
+  "api": {
+    "baseApiUrl": "https://total-dev-twf4biz.aqa.tgscloud.net/"
+  },
+  "tags": "@total-core",
+  "language": "en",
+  "defaultImage": "bht-default-fr9ot6bk"
+}
