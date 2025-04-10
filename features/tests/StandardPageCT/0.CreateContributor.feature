@@ -6,7 +6,7 @@ Feature: Login as Admin and create Contributor user for for testing Standard Pag
     # Login
     Given I go to "/en/user"
     And I wait for "2" seconds
-    And I click on all the elements with selector "button#teal-consent-prompt-submit"
+    And I click on the element "button#teal-consent-prompt-submit"
     And I log in
     # Create Editor user
     And I go to "/en/admin/people/create"
