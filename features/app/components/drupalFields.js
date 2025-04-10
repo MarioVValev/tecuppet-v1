@@ -1,5 +1,7 @@
 const drupalFields = {
     'Submit': '[id^="edit-submit"]',
+    'Save layout': '[id^="edit-submit"]',
+    'Save': '#gin-sticky-edit-submit',
     'Delete': '#edit-delete',
     'Run': '#edit-run',
     'Cancel': '#edit-cancel',
