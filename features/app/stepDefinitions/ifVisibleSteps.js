@@ -6,6 +6,7 @@ const {
 const utils = require("../../src/elementInteraction");
 const config = require("config");
 const dataStorage = require("../../src/dataStorage");
+
 Then ("I should see {string} if visible", async function (text) {
     if (config.has("skipSteps") && config.get("skipSteps") === text) {
         return true
@@ -43,4 +44,8 @@ Then ("I check if link with href {string} has attribute {string} with {string} v
 Then ("I {string} the checkbox {string} if visible", async function (action, cssSelector) {
     const selector = await dataStorage.prepareCssSelector(cssSelector);
     await utils.useCheckbox(this.page, selector, action, true);
+});
+When('I click on the element {string} if visible', async function (cssSelector) {
+    const selector = await dataStorage.prepareCssSelector(cssSelector);
+    await utils.click(this.page, selector, true);
 });
