@@ -31,9 +31,15 @@ module.exports = {
      * Click on an element
      * @param page
      * @param selector
-     * @returns {Promise<void>}
+     * @param skip
+     * @returns {Promise<boolean>}
      */
-    click: async function (page, selector) {
+    click: async function (page, selector, skip = false) {
+        const skipped = await this.customWaitForSkippableElement(page, selector, skip);
+        if (skipped) {
+            return true;
+        }
+
         const objectToCLick = await page.waitForSelector(selector, { visible: true });
         const afterClickPromise = helper.afterClick(page);
         try {
